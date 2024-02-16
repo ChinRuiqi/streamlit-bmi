@@ -13,12 +13,12 @@ st.title("Welcome to BMI calculator")
 #Input
 
 weight = st.number_input("Enter your weight in KG", step = 0.1)
-
-height = st.number_input("Enter your height in Meters", step = 0.01)
 if weight < 10 or weight > 650:
     st. error("Unable to calculate, weight out of range")
     quit()
-    
+
+height = st.number_input("Enter your height in Meters", step = 0.01)
+
 if height < 0.6 or height > 3:
     st. error("Unable to calculate, height out of range")
     quit()
