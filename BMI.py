@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+i#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Created on Tue Mar  7 14:16:50 2023
@@ -34,7 +34,7 @@ def calculate_bmi():
             level = level_labels[2]
         else:
             level = level_labels[3]
-        st. success(f"Your BMI is {round(bmi, 1)}, you are at {level}")
+        st. success(f"Your BMI is {round(bmi, 1)}, you are at {level}", icon "✅")
 
 button = st.button("Calculate BMI")
 if button:
