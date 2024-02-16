@@ -15,7 +15,9 @@ st.title("Welocme to BMI calculator")
 weight = st.number_input("Enter your weight in KG", step = 0.1)
 
 height = st.number_input("Enter your height in Meters", step = 0.01)
-
+if weight > 650:
+    st. error("Weight out of range")
+        
 def calculate_bmi():
     bmi = weight/(height)**2
     bmi_thresholds = [18.5, 23, 27.5]
