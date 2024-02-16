@@ -8,7 +8,7 @@ Created on Tue Mar  7 14:16:50 2023
 
 import streamlit as st
 
-st.title("Welocme to BMI calculator")
+st.title("Welcome to BMI calculator")
 
 #Input
 
@@ -34,7 +34,7 @@ def calculate_bmi():
             level = level_labels[2]
         else:
             level = level_labels[3]
-        st. success(f"Your BMI is {bmi}. You are at {level}")
+        st. success(f"Your BMI is {round(bmi, 2)}. You are at {level}")
 
 button = st.button("Calculate BMI")
 if button:
