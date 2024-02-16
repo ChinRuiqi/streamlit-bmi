@@ -19,10 +19,8 @@ height = st.number_input("Enter your height in Meters", step = 0.01)
 def calculate_bmi():
     if weight < 10 or weight > 300:
         st. error("Weight out of range")
-        quit()
-    if height < 0.5 or height > 3:
+    elif height < 0.5 or height > 3:
         st. error("Height out of range")
-        quit()
     else:
         bmi = weight/(height)**2
         bmi_thresholds = [18.5, 23, 27.5]
